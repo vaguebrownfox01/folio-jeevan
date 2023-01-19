@@ -5,12 +5,12 @@ const siteMetadata = {
   headerTitle: 'Jeevan Kylash',
   description: 'My portfolio!',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'dark', // system, dark or light
   siteUrl: 'https://jeevankylash.vercel.app',
-  siteRepo: 'https://github.com/vaguebrownfox01/jeevankylash-portfolio',
+  siteRepo: 'https://github.com/vaguebrownfox01/folio-jeevan',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/avatar.jpg',
   email: 'jeevankylash@outlook.com',
   github: 'https://github.com/vaguebrownfox01',
   twitter: 'https://twitter.com/envvua_log',
