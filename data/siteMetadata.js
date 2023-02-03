@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/images/avatar.jpg',
   email: 'jeevankylash@outlook.com',
   github: 'https://github.com/vaguebrownfox01',
-  twitter: 'https://twitter.com/envvua_log',
+  twitter: 'https://twitter.com/',
   facebook: '',
   youtube: '',
   linkedin: 'https://www.linkedin.com',
