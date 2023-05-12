@@ -7,17 +7,19 @@ const CustomLink = ({ href, ...rest }) => {
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
-        <a {...rest} />
+      <Link className="no-underline" href={href}>
+        <a className="no-underline" {...rest} />
       </Link>
     )
   }
 
   if (isAnchorLink) {
-    return <a href={href} {...rest} />
+    return <a className="no-underline" href={href} {...rest} />
   }
 
-  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />
+  return (
+    <a target="_blank" rel="noopener noreferrer" className="no-underline" href={href} {...rest} />
+  )
 }
 
 export default CustomLink
