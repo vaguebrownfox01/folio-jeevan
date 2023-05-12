@@ -1,11 +1,9 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Pnoi-phone',
+    description: `An acoustic-based method for detection and monitoring of respiratory diseases using simultaneously recorded vocal breath sounds and pulmonary(chest) auscultation.`,
+    imgSrc: '/static/images/pnoi/pnoi-illustration.png',
+    href: 'all/pnoi-phone/1_introduction',
   },
   // {
   //   title: 'The Time Machine',
