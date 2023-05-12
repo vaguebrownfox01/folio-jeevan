@@ -1,10 +1,9 @@
-import styles from '@tailwindcss/typography/src/styles'
 import React from 'react'
 
-export function Hil({ children, color }) {
+export function Hil({ children }) {
   return <span className="rounded-[2px] bg-primary-700 p-1 text-white">{children}</span>
 }
-export function Ul({ children, color }) {
+export function Ul({ children }) {
   return (
     <span className="rounded-[2px] p-1 underline decoration-primary-500 decoration-2 underline-offset-4 dark:text-white">
       {children}
