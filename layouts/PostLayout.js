@@ -15,7 +15,7 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, images, tags } = frontMatter
+  const { slug, fileName, date, title, tags, page, pages } = frontMatter
 
   return (
     <SectionContainer>
@@ -133,6 +133,24 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
+              {pages && (
+                <div className="pt-4 xl:pt-8">
+                  {pages.map((p) => (
+                    <Link
+                      target="_self"
+                      key={p}
+                      href={`${p.href}`}
+                      className={`mb-2 flex justify-start rounded-sm px-4 py-2 font-bold text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 ${
+                        page == p.href
+                          ? 'bg-gray-300 dark:bg-gray-700'
+                          : 'bg-gray-100 dark:bg-gray-800'
+                      }`}
+                    >
+                      {`${p.label}`} &rarr;
+                    </Link>
+                  ))}
+                </div>
+              )}
               <div className="pt-4 xl:pt-8">
                 <Link
                   href="/all"

@@ -1,23 +1,26 @@
+import Image from 'next/image'
 import React from 'react'
 
 export function Hil({ children }) {
-  return <span className="rounded-[2px] bg-primary-700 p-1 text-white">{children}</span>
+  return (
+    <span className="rounded-[2px] bg-primary-700 p-1 font-semibold text-white">{children}</span>
+  )
 }
 export function Ul({ children }) {
   return (
-    <span className="rounded-[2px] p-1 underline decoration-primary-500 decoration-2 underline-offset-4 dark:text-white">
+    <span className="p-1 underline decoration-primary-500 decoration-2 underline-offset-4 dark:text-white">
       {children}
     </span>
   )
 }
 
 export function Ref({ children, color }) {
-  return <span className="rounded-[2px] p-1 font-semibold text-primary-600">{children}</span>
+  return <span className=" p-1 font-semibold text-primary-600">{children}</span>
 }
 
 export function Link({ href }) {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="rounded-[2px] p-1 text-primary-500">
+    <a href={href} target="_blank" rel="noreferrer" className=" p-1 text-primary-500">
       {'link'}
     </a>
   )
@@ -46,5 +49,14 @@ export function Next({ next_page, prev_page }) {
         )}
       </div>
     </>
+  )
+}
+
+export function MdFig({ width, height, src, desc }) {
+  return (
+    <div className=" flex flex-col items-center justify-center">
+      <Image {...{ width, height, src }} />
+      <span className="p-2 font-semibold">{desc}</span>
+    </div>
   )
 }
