@@ -3,7 +3,9 @@ import React from 'react'
 
 export function Hil({ children }) {
   return (
-    <span className="rounded-[2px] bg-primary-700 p-1 font-semibold text-white">{children}</span>
+    <span className="mb-1 rounded-[2px] bg-primary-700 p-1 font-semibold text-white">
+      {children}
+    </span>
   )
 }
 export function Ul({ children }) {
@@ -55,7 +57,7 @@ export function Next({ next_page, prev_page }) {
 export function MdFig({ width, height, src, desc }) {
   return (
     <div className=" flex flex-col items-center justify-center">
-      <Image {...{ width, height, src }} />
+      <Image alt={desc} {...{ width, height, src }} />
       <span className="p-2 font-semibold">{desc}</span>
     </div>
   )
