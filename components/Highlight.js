@@ -3,7 +3,7 @@ import React from 'react'
 
 export function Hil({ children }) {
   return (
-    <span className="rounded-[2px] bg-primary-700 p-1 font-semibold text-white">{children}</span>
+    <span className="rounded-[2px] mb-1 bg-primary-700 p-1 font-semibold text-white">{children}</span>
   )
 }
 export function Ul({ children }) {
