@@ -38,7 +38,7 @@ export function Next({ next_page, prev_page }) {
             href={prev_page.href}
             className="rounded-[2px] bg-gray-100 px-4 py-1 text-primary-500 dark:bg-gray-800"
           >
-            {`Previous: ${prev_page.label}`}
+            &larr;&nbsp;{`${prev_page.label}`}
           </a>
         )}
         {next_page && (
@@ -46,7 +46,7 @@ export function Next({ next_page, prev_page }) {
             href={next_page.href}
             className="rounded-[2px] bg-gray-100 px-4 py-1 text-primary-500 dark:bg-gray-800"
           >
-            {`Next: ${next_page.label}`}
+            {`${next_page.label}`}&nbsp;&rarr;
           </a>
         )}
       </div>
