@@ -3,7 +3,9 @@ import React from 'react'
 
 export function Hil({ children }) {
   return (
-    <span className="rounded-[2px] bg-primary-700 p-1 font-semibold text-white">{children}</span>
+    <span className="mb-1 rounded-[2px] bg-primary-700 p-1 font-semibold text-white">
+      {children}
+    </span>
   )
 }
 export function Ul({ children }) {
@@ -36,7 +38,7 @@ export function Next({ next_page, prev_page }) {
             href={prev_page.href}
             className="rounded-[2px] bg-gray-100 px-4 py-1 text-primary-500 dark:bg-gray-800"
           >
-            {`Previous: ${prev_page.label}`}
+            &larr;&nbsp;{`${prev_page.label}`}
           </a>
         )}
         {next_page && (
@@ -44,7 +46,7 @@ export function Next({ next_page, prev_page }) {
             href={next_page.href}
             className="rounded-[2px] bg-gray-100 px-4 py-1 text-primary-500 dark:bg-gray-800"
           >
-            {`Next: ${next_page.label}`}
+            {`${next_page.label}`}&nbsp;&rarr;
           </a>
         )}
       </div>
@@ -55,7 +57,7 @@ export function Next({ next_page, prev_page }) {
 export function MdFig({ width, height, src, desc }) {
   return (
     <div className=" flex flex-col items-center justify-center">
-      <Image {...{ width, height, src }} />
+      <Image alt={desc} {...{ width, height, src }} />
       <span className="p-2 font-semibold">{desc}</span>
     </div>
   )
