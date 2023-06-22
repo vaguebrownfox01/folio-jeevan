@@ -9,3 +9,5 @@ Discuss with yourself:
 - Foundation of the project
 - Roles you played
 - Things you delivered
+
+This weekend: 24-25 June 2023
