@@ -4,9 +4,9 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import ListLayout from '@/layouts/ListLayout'
 import { POSTS_PER_PAGE } from '..'
 
-const title = "Projects"
-const path = 'all/project';
-const ref = "project";
+const title = "Blogs"
+const path = 'all/blog';
+const ref = 'blog'
 
 
 export async function getStaticPaths() {
