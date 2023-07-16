@@ -5,9 +5,9 @@ import { PageSEO } from '@/components/SEO'
 
 export const POSTS_PER_PAGE = 5
 
-const title = "Posts"
-const path = 'all';
-const ref = "all";
+const title = "Projects"
+const path = 'all/project';
+const ref = "project";
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter(path)
@@ -21,7 +21,7 @@ export async function getStaticProps() {
   return { props: { initialDisplayPosts, posts, pagination } }
 }
 
-export default function All({ posts, initialDisplayPosts, pagination }) {
+export default function Project({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSEO

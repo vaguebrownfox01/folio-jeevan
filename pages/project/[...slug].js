@@ -6,7 +6,7 @@ import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/l
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
-const path = 'all';
+const path = 'all/project';
 
 export async function getStaticPaths() {
   const posts = getFiles(path)

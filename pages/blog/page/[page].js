@@ -4,9 +4,10 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import ListLayout from '@/layouts/ListLayout'
 import { POSTS_PER_PAGE } from '..'
 
-const title = "Posts"
-const path = 'all';
-const ref = "all";
+const title = "Blogs"
+const path = 'all/blog';
+const ref = 'blog'
+
 
 export async function getStaticPaths() {
   const totalPosts = await getAllFilesFrontMatter(path)
@@ -34,7 +35,7 @@ export async function getStaticProps(context) {
   const pagination = {
     currentPage: pageNumber,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
-    path: ref,
+    path: ref
   }
 
   return {

@@ -30,7 +30,7 @@ export default function Home({ posts }) {
           {!posts.length && 'No posts found.'}
 
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { pref, slug, date, title, summary, tags } = frontMatter
             return (
               <li key={slug} className="py-12">
                 <article>
@@ -46,7 +46,7 @@ export default function Home({ posts }) {
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/all/${slug}`}
+                              href={`/${pref}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}
@@ -64,7 +64,7 @@ export default function Home({ posts }) {
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
-                          href={`/all/${slug}`}
+                          href={`/${pref}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
