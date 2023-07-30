@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'vrx',
   greet: 'Hey!',
   headerTitle: 'Jeevan Kylash',
-  description: 'My portfolio!',
+  description: 'My portfolio',
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://jeevankylash.vercel.app',
